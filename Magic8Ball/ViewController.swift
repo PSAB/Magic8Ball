@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let randomValue: Int = Int(arc4random_uniform(5))
         let ballImageArray = ["ball1", "ball2", "ball3", "ball4", "ball5"]
         messageBallImageView.image = UIImage(named: ballImageArray[randomValue])
-        print(ballImageArray[randomValue])
+        print("\(ballImageArray[randomValue]) image displayed")
     }
     
 
