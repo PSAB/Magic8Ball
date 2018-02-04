@@ -20,9 +20,13 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        messageBallImageView.image = UIImage(named: "ball1")
     }
     
     @IBAction func askButonPressed(_ sender: Any) {
+        let randomValue: Int = Int(arc4random_uniform(4))
+        let ballImageArray = ["ball1", "ball2", "ball3", "ball4", "ball5"]
+        messageBallImageView.image = UIImage(named: ballImageArray[randomValue])
         
     }
     
