@@ -24,10 +24,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func askButonPressed(_ sender: Any) {
+        changeBallMessage()
+        
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        changeBallMessage()
+    }
+    
+    func changeBallMessage() {
         let randomValue: Int = Int(arc4random_uniform(4))
         let ballImageArray = ["ball1", "ball2", "ball3", "ball4", "ball5"]
         messageBallImageView.image = UIImage(named: ballImageArray[randomValue])
-        
     }
     
 
