@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var messageBallImageView: UIImageView!
     
 
     override func viewDidLoad() {
@@ -20,6 +21,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func askButonPressed(_ sender: Any) {
+        
+    }
+    
 
 
 }
